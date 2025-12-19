@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #eaeaea;
+}
+
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    background: #0f0f0f;
+    max-width: 1200px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.hero img {
+    width: 280px;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero h3 {
+    color: #00bfff;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 100px 10%;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.dark {
+    background: #181818;
+}
+
+
+/* EXPERIENCE */
+
+.timeline .job {
+    margin-bottom: 30px;
+}
+
+.timeline span {
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #0f0f0f;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f0f0f;
+    color: #777;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 120px 5% 60px;
+    }
+    .hero img {
+        width: 180px;
+        margin-top: 20px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    /* SECTIONS */
+    .section {
+        padding: 60px 5%;
+    }
+}
