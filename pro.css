@@ -18,9 +18,11 @@ nav {
     justify-content: space-between;
     padding: 20px 10%;
     position: fixed;
+    top: 0;
+    left:  0;
     width: 100%;
     background: #0f0f0f;
-    max-width: 1200px;
+    z-index: 1000;
 }
 
 nav ul {
@@ -127,4 +129,5 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 
